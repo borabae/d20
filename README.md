@@ -1,1 +1,4 @@
-# d20
+- Basic python code
+- Random simulator to roll number between 1-20
+- Prompts users to input response (y/n and enter or quit)
+- Provides error message should user input invalid data
