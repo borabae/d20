@@ -10,8 +10,13 @@ def main():
         input("Press Enter to roll the dice or 'q' to quit: ")
         roll_result = roll_dice()
         print(f"You rolled: {roll_result}")
-        if input("Roll again? (y/n): ").lower() != 'y':
+        user_input = input("Roll again? (y/n): ").lower()
+        if user_input == 'y':
+            continue
+        elif user_input == 'n':
             break
+        else:
+            print("Invalid input! Please enter 'y' to roll again or 'n' to quit.")
 
 if __name__ == "__main__":
     main()
